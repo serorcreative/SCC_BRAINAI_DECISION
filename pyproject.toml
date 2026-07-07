@@ -1,0 +1,25 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "scc-brainai-decision"
+version = "1.0.0"
+description = "Couche de décision de BrainAI — sélectionne, qualifie et formalise une décision candidate gouvernée (impact/risque/confiance/réversibilité/urgence), avec conditions de validation, critères de succès/échec, conditions de révocation et manifeste pour Execution. Sans LLM obligatoire, validation humaine, stdlib pur, déterministe, sans réseau."
+readme = "README.md"
+requires-python = ">=3.9"
+license = { text = "Proprietary" }
+authors = [{ name = "Seror Créative" }]
+keywords = ["scc", "brainai", "decision", "governance", "qualification"]
+dependencies = []
+
+[project.scripts]
+scc-brain-decision = "scc_brainai_decision.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]
+testpaths = ["tests"]
+addopts = "-q"

@@ -1,0 +1,24 @@
+{
+  "scc_root": "..",
+  "paths": {
+    "data_dir": "data"
+  },
+  "as_of": "2026-07-06T00:00:00+00:00",
+  "integrate_reasoning": true,
+  "integrate_planning": true,
+  "integrate_learning": true,
+  "weights": {
+    "impact": 0.30,
+    "risk": 0.30,
+    "confidence": 0.20,
+    "reversibility": 0.20
+  },
+  "thresholds": {
+    "high_impact": 0.7,
+    "high_risk": 0.6,
+    "low_reversibility": 0.4,
+    "high_urgency": 0.7
+  },
+  "provider_order": ["deterministic"],
+  "extra": {}
+}
